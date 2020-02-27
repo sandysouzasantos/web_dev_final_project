@@ -26,41 +26,79 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
+    <!-- Include fontawesome from a CDN-->
+    <script src="https://kit.fontawesome.com/434bcc5980.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
-    <div class="logo">
-        <h1>Balanced Life</h1>
-    </div>
+    <nav class="navbar fixed-top navbar-expand-md primary-bg">
+        <a class="navbar-brand" href="#">Balanced Life</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks"
+                aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars fa-2x"></i>
+        </button>
 
-    <nav>
-        <ul class="nav-bar">
-            <li><a href="./pages/physical.html">Physical</a></li>
-            <li><a href="./pages/emotional.html">Emotional</a></li>
-            <li><a href="./pages/mental.html">Mental</a></li>
-            <li><a href="./pages/contact.html">Contact Us</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/physical.html">Physical</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/emotional.html">Emotional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/mental.html">Mental</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>
-<main>
-    <h2>Balanced Life</h2>
-    <div class="big-image">
-        <!--Photo by Andrew DesLauriers on Unsplash-->
+<div class="container-fluid">
+    <main>
+        <div class="big-image">
+            <figure>
+                <!--Photo by Andrew DesLauriers on Unsplash-->
+                <img src="./images/andrew-deslauriers-oUPywYZT88Y-unsplash.jpg"
+                     alt="person walking on sand dunes leaving footprint trail behind">
+                <figcaption>Photo by <cite><a
+                        href="https://unsplash.com/@andrewdesla?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">Andrew
+                    DesLauriers</a></cite> on <cite><a href="https://unsplash.com/">Unsplash</a></cite>
+                </figcaption>
+            </figure>
+        </div>
 
-        <img src="./images/andrew-deslauriers-oUPywYZT88Y-unsplash.jpg"
-             alt="person walking on sand dunes leaving footprint trail behind">
-    </div>
-    <h3>Before healing others, heal yourself. Gambian saying</h3>
-    <p>Welcome! Balanced Life is a website and newsletter dedicated to bringing together contents about physical,
-        emotional and mental health for a balanced life.</p>
-    <p>We know that for a well being these three spheres are equally important and must be in harmony.
-        So with this intent, our weekly updates will give you more insights into these matters to inspire you
-        in the search of what fits for you and thus, be better for yourself and others. </p>
-    <p>Living in a more harmonious way, having strength, balance and wisdom will not only change you, but the world
-        around too. </p>
-</main>
-<div>
-    <div>
+        <h1>Balanced Life</h1>
+
+        <blockquote>
+            <span>"Before healing others, heal yourself."</span>
+            <br/>
+            <span>— Gambian saying</span>
+        </blockquote>
+
+        <p>Welcome! Balanced Life is a website and newsletter dedicated to bringing together contents about physical,
+            emotional and mental health for a balanced life.</p>
+        <p>We know that for a well being these three spheres are equally important and must be in harmony.
+            So with this intent, our weekly updates will give you more insights into these matters to inspire you
+            in the search of what fits for you and thus, be better for yourself and others. </p>
+        <p>Living in a more harmonious way, having strength, balance and wisdom will not only change you, but the world
+            around too. </p>
+    </main>
+
+    <aside>
+        <h3>Sign up our newsletter!</h3>
+        <p>Receive weekly a balanced content to live better</p>
+        <form action="">
+            <input type="text" placeholder="Your email">
+            <button>I want</button>
+        </form>
+    </aside>
+
+    <section id="weekContent">
+        <h2>This week articles:</h2>
+
         <div class="card">
             <div class="image-box">
                 <!--Photo by bruce mars on Unsplash-->
@@ -90,18 +128,11 @@
             </div>
             <p>Mental: Is it impossible calm your thoughts?! These apps can help you</p>
         </div>
-    </div>
+
+    </section>
+
 
 </div>
-<aside>
-
-</aside>
-<h3>Sign up our newsletter!</h3>
-<p>Receive weekly a balanced content to live better</p>
-<form action="">
-    <input type="text" placeholder="Your email">
-    <button>I want</button>
-</form>
 
 <footer>
     <p>Balanced Life</p>
