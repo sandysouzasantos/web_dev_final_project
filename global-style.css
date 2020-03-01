@@ -65,7 +65,7 @@ footer {
     background-color: rgb(196, 60, 0);
 }
 
-.grey-bg{
+.grey-bg {
     background-color: rgba(0, 0, 0, 0.35);
 }
 
@@ -83,6 +83,49 @@ footer {
     margin: auto;
     text-align: center;
     margin-bottom: 2rem;
+}
+/* This animation was inspired by https://codepen.io/oliviale/pen/vPvvyr */
+.button-rainbow {
+    animation: rainbow 3s infinite, heartbeat 0.6s infinite;
+    background: rgb(196, 60, 0);
+    transition: 0.5s ease;
+    transform: rotate(0);
+}
+
+@keyframes heartbeat {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background: #1abc9c;
+    }
+    10% {
+        background: #2ecc71;
+    }
+    20% {
+        background: #3498db;
+    }
+    30% {
+        background: #9b59b6;
+    }
+    40% {
+        background: #e74c3c;
+    }
+    50% {
+        background: #e67e22;
+    }
+    60% {
+        background: #f1c40f;
+    }
+    70% {
+        background: #2c3e50;
+    }
+    80% {
+        background: #9b59b6;
+    }
 }
 
 @media (min-width: 992px) {

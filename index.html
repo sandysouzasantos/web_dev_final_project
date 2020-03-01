@@ -15,6 +15,7 @@
     <!-- Include Bootstrap from a CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS for global elements and classes -->
     <link rel="stylesheet" href="./global-style.css">
     <!-- Include javascript libraries from a CDN to work with Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -56,9 +57,9 @@
         </div>
     </nav>
 </header>
-<div class="container-fluid">
+<div class="container-lg">
     <main class="row">
-        <div class="big-image">
+        <div class="big-image my-5">
             <figure>
                 <!--Photo by Andrew DesLauriers on Unsplash-->
                 <img src="./images/andrew-deslauriers-oUPywYZT88Y-unsplash.jpg"
@@ -99,7 +100,7 @@
                         <label for="email" class="sr-only">Password</label>
                         <input type="email" class="form-control" id="email" placeholder="Your email">
                     </div>
-                    <button type="submit" class="btn dark-secondary-bg ml-2 mb-2 text-light">Yeah!</button>
+                    <button type="submit" class="btn ml-2 mb-2 text-light button-rainbow">Yeah!</button>
                 </form>
             </aside>
         </div>
@@ -147,7 +148,7 @@
             </div>
         </div>
 
-        <div class="d-lg-block w-75 mx-auto">
+        <div class="d-none d-lg-block w-75 mx-auto my-5">
             <div id="postsCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#postsCarousel" data-slide-to="0" class="active"></li>
@@ -163,6 +164,7 @@
                         <div class="carousel-caption d-none d-md-block grey-bg">
                             <h5 class="text-light">Physical</h5>
                             <p class="card-text text-light">It's time to move your body.</p>
+                            <span class="text-light">Photo by Bruce Mars on Unsplash</span>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -173,6 +175,7 @@
                         <div class="carousel-caption d-none d-md-block grey-bg">
                             <h5 class="text-light">Emotional</h5>
                             <p class="card-text text-light">Love yourself first.</p>
+                            <span class="text-light">Photo by Clarisse Meyer on Unsplash</span>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -184,6 +187,7 @@
                             <h5 class="text-light">Mental</h5>
                             <p class="card-text text-light">Is it impossible calm your thoughts?! These apps can help
                                 you.</p>
+                            <span class="text-light">Photo by Léonard Cotte on Unsplash</span>
                         </div>
                     </div>
                 </div>
@@ -230,7 +234,7 @@
                         <label for="emailFooter" class="sr-only">Password</label>
                         <input type="email" class="form-control" id="emailFooter" placeholder="Your email">
                     </div>
-                    <button type="submit" class="btn secondary-bg ml-2 mb-2">Yeah!</button>
+                    <button type="submit" class="btn ml-2 mb-2 text-light button-rainbow">Yeah!</button>
                 </form>
             </div>
 
@@ -247,7 +251,9 @@
             </div>
         </div>
 
-        <p class="text-center">copyright 2020 - Balanced Life</p>
+        <div class="text-center">
+            <span>copyright 2020 - Balanced Life</span>
+        </div>
     </div>
 
 </footer>
